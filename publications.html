@@ -7,7 +7,7 @@
  <!--<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">-->
  <!--<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">-->
  <meta charset='utf-8'/>	
-  <link rel='shortcut icon' href='imgs/favicon.png'/>
+  <link rel='shortcut icon' href='img/logo.png'/>
   <link rel='apple-touch-icon' href='imgs/favicon.png'/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src='js/jquery-ui.min.js'></script>
@@ -22,6 +22,31 @@
 
 		body,div,header,footer,section,ul,ol,dl,dt,dd,li,p{margin:0; padding:0;}
 		div, header, nav, section, footer{display:block;}
+
+	/*########## header ##########*/
+		#wrap{width:100%; margin:0 auto;}
+		#headerWrap{width:100%; background-color:rgba(0,0,0,0.9); position:fixed; top:0; z-index:1;}
+		#header{width:90%; height:78px; margin:0 auto; position:relative;}
+		h1{width:500px; height:43px; position:absolute; top:13px; /*overflow:hidden;*/ transition:all 2s;}
+		h1 a{color:#FFFFFF;color:#FFFFFF;}
+		/*h1 a img{width:100%; margin-top:-22px;}*/
+		#mobHeader{display:none;}
+		#mobMenu{display:none;}
+	
+	/*########## topMenu ##########*/
+		#topMenu{width:100%; height:18px; font-size:11px;}
+		
+	/*########## infoMenu ##########*/
+		#topMenu a{font-size:20px; color:#FFFFE7; /*padding-left:10px;*/}
+		#topMenu ul{width:100%; height:100%; padding-top:20px; text-align:right;}
+
+		#topMenu li{display:inline; padding-right:15px;}
+		#topMenu li a{width:100%;}
+		#topMenu li a:hover{width:97%; color:#fff; text-decoration:underline; border-radius:10px; background-image:-webkit-linear-gradient(left, #454545 30%, #565656);}
+
+	.topBox{display:block; width:50px; border-radius:8px; line-height:58px; font-weight:600; text-align:center; background-color:#363636; color:#fff; font-size:35px; opacity:.7; position:fixed; right:20px; bottom:20px; transition:all 1s;}
+	.topBox:hover{border:2px solid red; border-radius:8px;}
+
 	</style>
 	<script>
 
@@ -29,6 +54,59 @@
  </head>
 
  <body>
-  
+	<div id='wrap'>
+		<div id='headerWrap'>
+			<header id='header'>
+				<h1>
+					<a href='lab.html' title='dataintelligencelab'>
+						<span>
+							Data Intelligence Lab(채동규)
+						</span>
+						<!--<img src='imgs/apple_logo.svg' alt='apple logo'/>-->
+					</a>
+				</h1>
+				<div id='topMenu'>
+					<ul id='infoMenu'>
+						<li>
+							<a href='lab.html' title='Home'>
+								Home
+							</a>
+						</li>
+						<li>
+							<a href='members.html' title='Members'>
+								Members
+							</a>
+						</li>
+						<li>
+							<a href='projects' title='Projects'>
+								Projects
+							</a>
+						</li>
+						<li>
+							<a href='publications.html' title='Publications'>
+								Publications
+							</a>
+						</li>
+						<li>
+							<a href='lectures' title='Lectures'>
+								Lectures
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+		</div>
+		<div id='container'>
+			<a href='#headerWrap' title='top' class='topBox'>
+				↑
+			</a>
+		</div>
+		<footer>
+			<p>
+				Theme inspired by Modernity</br>
+				© 2021 Hyeongjun Kim. All rights reserved.
+			</p>
+		</footer>
+	</div>
  </body>
 </html>
