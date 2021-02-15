@@ -6,14 +6,15 @@
  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'/>
  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
- <meta charset='utf-8'/>	
+ <meta charset='utf-8'/> 	
   <link rel='shortcut icon' href='img/logo.png'/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel='apple-touch-icon' href='imgs/favicon.png'/>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src='js/jquery-ui.min.js'></script>
   <script src='js/tabBasic_mobHeaderSlide.js'></script>
-  <script src='js/section_ad_opaque.js'></script>
+  <script src='js/section_ad_opaque.js'></script>-->
 	<style>	
-	/*########## �ʱ�ȭ ##########*/
+	/*########## 초기화 ##########*/
 		*{margin:0; padding:0;}
 		li{list-style:none;}
 		a:link, a:visited{text-decoration:none;}
@@ -43,27 +44,32 @@
 		#topMenu li a{width:100%;}
 		#topMenu li a:hover{width:97%; color:#fff; text-decoration:underline; border-radius:10px; background-image:-webkit-linear-gradient(left, #454545 30%, #565656);}
 
-	/*########## container ##########*/
+/*########## container ##########*/
 		#container{width:100%;}
 
+	/*########### datalab ##########*/
+		#datalab{width:100%; height:200px; padding-top:88px;}
+		#datalab p{width:1024px; height:200px; margin:0 auto; padding-top:75px; text-align:center; color:black; font-size:60px; font-weight:900;}
+
 	/*########## visual ##########*/
-		#visual{width:100%; height:400px; overflow:hidden; background-image:url('img/ai.jpeg'); background-size:100%; background-repeat:no-repeat; opacity:0.8;}
-		#visual ul{width:100%; height:100%;}
-		#visual ul li{width:100%; height:100%; line-height:400px; color:#fff; text-align:center; font-size:90px; font-weight:900; letter-spacing:35px;}
+		#visual{width:100%; height:800px; padding-top:100px; overflow:hidden;}
+		#visual ul{width:1024px; margin:0 auto;}
+		#visual ul li{width:100%;}
+		#visual ul li img{width:100%;}
+
+	/*########### expla1 ###########*/
+		#expla1{width:100%; height:240px; text-align:center; font-size:27px; font-weight:400;}		
 
 	/*########### field ###########*/
-		#field1{width:60%; height:220px; margin:0 auto; padding-top:160px;}
-		#field2{width:60%; height:220px; margin:0 auto;}
-		#field3{width:60%; height:220px; margin:0 auto;}
-		#field4{width:60%; height:220px; margin:0 auto;}
-		#field1 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field2 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field3 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field4 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
+		#field1{width:60%; height:300px; margin:0 auto;}
+		#field2{width:60%; height:300px; margin:0 auto;}
+		#field3{width:60%; height:300px; margin:0 auto;}
+		#field1 ul{width:100%; height:300px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
+		#field2 ul{width:100%; height:300px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
+		#field3 ul{width:100%; height:300px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
 		#field1 ul li{height:50px; font-family:Bitter;}
 		#field2 ul li{height:50px; font-family:Bitter;}
 		#field3 ul li{height:50px; font-family:Bitter;}
-		#field4 ul li{height:50px; font-family:Bitter;}
 
 		.titles{padding-bottom:15px; font-size:35px; font-weight:600; font-family:Oswald,'arial',sans-serif;}
 
@@ -73,9 +79,16 @@
 		footer{width:100%; text-align:center;}
 		footer p{width:1024px; margin:0 auto; padding:30px 0 40px; border-top:1px solid #cdcdcd;}
 
-	
+
 	.topBox{display:block; width:50px; border-radius:8px; line-height:58px; font-weight:600; text-align:center; background-color:#363636; color:#fff; font-size:35px; opacity:.7; position:fixed; right:20px; bottom:20px; transition:all 1s;}
 	.topBox:hover{border:2px solid red; border-radius:8px;}
+
+
+	@media all and (min-width:300px) and (max-width:1300px){
+
+		/*########## header ##########*/
+			#infoMenu{display:none;}
+	}
 
 	</style>
 	<script>
@@ -127,64 +140,87 @@
 			</header>
 		</div>
 		<div id='container'>
+			<div id='datalab'>
+				<p>
+					Data Intelligence Laboratory
+				</p>
+			</div>
 			<div id='visual'>
 				<ul>
 					<li>
-						<span>MEMBERS</span>
+						<img src='img/me.jpg' alt='교수님 이미지'/>
 					</li>
 				</ul>
 			</div>
-						<div id='field1'>
+			<div id='expla1'>
+				<p>
+					데이터 인텔리전스 연구실은 현재 아래의 분야들을 연구하고 있습니다.
+				</p>
+			</div>
+			<div id='field1'>
 				<p class='titles'>
-					지도교수
+					&lt;설명 가능한 인공지능 (XAI)&gt;
 				</p>
 				<ul>
 					<li>
-						- 채동규
+						- Input attribution
 					</li>
-					
+					<li>
+						- Attention
+					</li>
+					<li>
+						- Host-hoc explanation
+					</li>
 				</ul>
 			</div>
 			<div id='field2'>
 				<p class='titles'>
-					박사과정
+					&lt;추천시스템&gt;
 				</p>
 				<ul>
 					<li>
-						- 황성현 (XAI)
+						- Explainable recommendation
+					</li>
+					<li>
+						- Music recommendation
+					</li>
+					<li>
+						- Game recommendation
+					</li>
+					<li>
+						- Tag recommendation
 					</li>
 				</ul>
 			</div>
 			<div id='field3'>
 				<p class='titles'>
-					석박통합과정
+					&lt;머신러닝&gt;
 				</p>
 				<ul>
 					<li>
-						- 김수경 (XAI) 이하림 (XAI) 성은선 (XAI)
+						- few-shot learning
 					</li>
-				</ul>
-			</div>
-			<div id='field4'>
-				<p class='titles'>
-					석사과정
-				</p>
-				<ul>
 					<li>
-						- 김형준 (XAI+추천시스템), 임석영 (XAI+음성데이터), 박수민 (XAI+추천시스템), 김성겸 (XAI), 이유진 (XAI), 민희수 (추천시스템), 구인화 (few-shot learning), 김진수 (추천시스템), 김지현 (추천시스템), 김선민 (unsupervised learning)
+						- unsupervised learning
 					</li>
 				</ul>
 			</div>
-			<a href='#headerWrap' title='top' class='topBox'>
+
+			<p id='mailing'>
+				위 뿐만 아니라 AI & 데이터마이닝과 관련된 모든 연구에 관심이 있습니다.</br>
+				본 연구실에 관심이 있는 학생은 <i>dongkyu@hanyang.ac.kr</i> 로 간단한 자기소개서 및 연구계획서, 이력서, 영어성적증명서, 포트폴리오 등을 첨부해서 메일 바랍니다.
+			</p>
+			<footer>
+				<p>
+					Theme inspired by modernity</br>
+					© 2019 Hyeongjun Kim. All rights reserved.
+				</p>
+			</footer>
+
+			<a href='#datalab' title='top' class='topBox'>
 				↑
 			</a>
 		</div>
-		<footer>
-			<p>
-				Theme inspired by Modernity</br>
-				© 2019 Hyeongjun Kim. All rights reserved.
-			</p>
-		</footer>
 	</div>
  </body>
 </html>
