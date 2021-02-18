@@ -25,7 +25,7 @@
 
 	/*########## header ##########*/
 		#wrap{width:100%; margin:0 auto;}
-		#headerWrap{width:100%; background-color:rgba(0,0,0,0.9); position:fixed; top:0; z-index:1;}
+		#headerWrap{width:100%; background-color:#2980B9; position:fixed; top:0; z-index:1;}
 		#header{width:90%; height:78px; margin:0 auto; position:relative;}
 		h1{width:500px; height:43px; position:absolute; top:13px; /*overflow:hidden;*/ transition:all 2s;}
 		h1 a{color:#FFFFFF;color:#FFFFFF;}
@@ -49,16 +49,17 @@
 
 	/*########### datalab ##########*/
 		#datalab{width:100%; height:200px; padding-top:88px;}
-		#datalab p{width:1024px; height:200px; margin:0 auto; padding-top:75px; text-align:center; color:black; font-size:60px; font-weight:900;}
+		#datalab #datalabp1{width:1024px; height:80px; margin:0 auto; padding-top:35px; text-align:center; color:#2980B9; font-size:45px; font-weight:900;}
+		#datalab #datalabp2{width:1024px; height:60px; margin:0 auto; text-align:center; color:#88888C; font-size:18px; font-weight:900;}
 
 	/*########## visual ##########*/
-		#visual{width:100%; height:800px; padding-top:100px; overflow:hidden;}
+		#visual{width:100%; height:800px; padding-top:50px; overflow:hidden;}
 		#visual ul{width:1024px; margin:0 auto;}
 		#visual ul li{width:100%;}
 		#visual ul li img{width:100%;}
 
 	/*########### expla1 ###########*/
-		#expla1{width:100%; height:240px; text-align:center; font-size:27px; font-weight:400;}		
+		#expla1{width:100%; height:200px; text-align:center; font-size:27px; font-weight:400;}		
 
 	/*########### field ###########*/
 		#field1{width:60%; height:300px; margin:0 auto;}
@@ -101,7 +102,7 @@
 		<div id='headerWrap'>
 			<header id='header'>
 				<h1>
-					<a href='lab.html' title='dataintelligencelab'>
+					<a href='index.html' title='DataIntelligenceLab'>
 						<span>
 							Data Intelligence Lab(채동규)
 						</span>
@@ -111,7 +112,7 @@
 				<div id='topMenu'>
 					<ul id='infoMenu'>
 						<li>
-							<a href='lab.html' title='Home'>
+							<a href='index.html' title='Home'>
 								Home
 							</a>
 						</li>
@@ -121,7 +122,7 @@
 							</a>
 						</li>
 						<li>
-							<a href='projects' title='Projects'>
+							<a href='projects.html' title='Projects'>
 								Projects
 							</a>
 						</li>
@@ -131,7 +132,7 @@
 							</a>
 						</li>
 						<li>
-							<a href='lectures' title='Lectures'>
+							<a href='lectures.html' title='Lectures'>
 								Lectures
 							</a>
 						</li>
@@ -141,8 +142,11 @@
 		</div>
 		<div id='container'>
 			<div id='datalab'>
-				<p>
-					Data Intelligence Laboratory(채동규)
+				<p id='datalabp1'>
+					데이터 지능 연구실
+				</p>
+				<p  id='datalabp2'>
+					Data Intelligence Laboratory
 				</p>
 			</div>
 			<div id='visual'>

@@ -25,7 +25,7 @@
 
 	/*########## header ##########*/
 		#wrap{width:100%; margin:0 auto;}
-		#headerWrap{width:100%; background-color:rgba(0,0,0,0.9); position:fixed; top:0; z-index:1;}
+		#headerWrap{width:100%; background-color:#2980B9; position:fixed; top:0; z-index:1;}
 		#header{width:90%; height:78px; margin:0 auto; position:relative;}
 		h1{width:500px; height:43px; position:absolute; top:13px; /*overflow:hidden;*/ transition:all 2s;}
 		h1 a{color:#FFFFFF;color:#FFFFFF;}
@@ -44,9 +44,35 @@
 		#topMenu li a{width:100%;}
 		#topMenu li a:hover{width:97%; color:#fff; text-decoration:underline; border-radius:10px; background-image:-webkit-linear-gradient(left, #454545 30%, #565656);}
 
+	/*########## container ##########*/
+		#container{width:100%; padding-bottom:100px;}
+
+	/*########## visual ##########*/
+		#visual{width:100%; height:400px; overflow:hidden; background-image:url('img/ai.jpeg'); background-size:100%; background-repeat:no-repeat; opacity:0.8;}
+		#visual ul{width:100%; height:100%;}
+		#visual ul li{width:100%; height:100%; line-height:400px; color:#fff; text-align:center; font-size:90px; font-weight:900; letter-spacing:35px;}
+
+	/*########### container div #########*/
+		#container #category{width:1100px; margin:0 auto;}
+
+		#category dl{padding-bottom:20px;}
+
+	/*############# container p ############*/
+		#container p{padding:50px 0; font-size:34px; font-weight:900;}
+
+
+	/*########### footer ###########*/
+		footer{width:100%; text-align:center;}
+		footer p{width:1024px; margin:0 auto; padding:30px 0 40px; border-top:1px solid #cdcdcd; font-size:12px;}
+
 	.topBox{display:block; width:50px; border-radius:8px; line-height:58px; font-weight:600; text-align:center; background-color:#363636; color:#fff; font-size:35px; opacity:.7; position:fixed; right:20px; bottom:20px; transition:all 1s;}
 	.topBox:hover{border:2px solid red; border-radius:8px;}
 
+	@media all and (min-width:300px) and (max-width:1300px){
+
+		/*########## header ##########*/
+			#infoMenu{display:none;}
+	}
 	</style>
 	<script>
 
@@ -58,7 +84,7 @@
 		<div id='headerWrap'>
 			<header id='header'>
 				<h1>
-					<a href='lab.html' title='dataintelligencelab'>
+					<a href='index.html' title='DataIntelligenceLab'>
 						<span>
 							Data Intelligence Lab(채동규)
 						</span>
@@ -68,7 +94,7 @@
 				<div id='topMenu'>
 					<ul id='infoMenu'>
 						<li>
-							<a href='lab.html' title='Home'>
+							<a href='index.html' title='Home'>
 								Home
 							</a>
 						</li>
@@ -78,7 +104,7 @@
 							</a>
 						</li>
 						<li>
-							<a href='projects' title='Projects'>
+							<a href='projects.html' title='Projects'>
 								Projects
 							</a>
 						</li>
@@ -88,7 +114,7 @@
 							</a>
 						</li>
 						<li>
-							<a href='lectures' title='Lectures'>
+							<a href='lectures.html' title='Lectures'>
 								Lectures
 							</a>
 						</li>
@@ -97,6 +123,270 @@
 			</header>
 		</div>
 		<div id='container'>
+			<div id='visual'>
+				<ul>
+					<li>
+						<span>PUBLICATION</span>
+					</li>
+				</ul>
+			</div>
+			<div id='category'>
+				<p>
+					Conference Papers
+				</p>
+				<dl>
+					<dt>ㆍ [C15] <b>Dong-Kyu Chae</b>, Jin-Soo Kang, and Sang-Wook Kim</dt>
+					<dd>
+						<b>Zero-Injection Meets Deep Learning: Boosting the Accuracy of Collaborative Filtering in Top-N Recommendation</b>
+					</dd>
+					<dd>
+						In <a href='http://db.pknu.ac.kr/dasfaa2020/' title='DASFAA 2020' style="color:#268BD2;"><b>DASFAA 2020</b></a>, Sep. 24-27, 2020.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C14] <b>Dong-Kyu Chae</b>, Jihoo Kim, Sang-Wook Kim and Duen Horng Chau</dt>
+					<dd>
+						<b>AR-CF: Augmenting Virtual Users and Items in Collaborative Filtering for Addressing Cold-Start Problems</b>
+					</dd>
+					<dd>
+						In <a href='https://sigir.org/sigir2020/' title='ACM SIGIR 2020' style="color:#268BD2;"><b>ACM SIGIR 2020</b></a>, Jul. 25-30, 2020. (<b>A/R: 26%</b>)
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C13] <b>Dong-Kyu Chae</b>, Jin-Soo Kang, Sang-Wook Kim and Jaeho Choi</dt>
+					<dd>
+						<b>Rating Augmentation with Generative Adversarial Networks towards Accurate Collaborative Filtering</b>
+					</dd>
+					<dd>
+						In <a href='https://www2019.thewebconf.org/' title='WWW 2019' style="color:#268BD2;"><b>WWW 2019</b></a>, May 13-17, 2019. (<b>A/R: 20%</b>)
+					</dd>
+				</dl>
+				<!---->
+				<dl>
+					<dt>ㆍ [C12] <b>Dong-Kyu Chae</b>, Jin-Soo Kang, Sang-Wook Kim and Jung-Tae Lee</dt>
+					<dd>
+						<b>CFGAN: A Generic Collaborative Filtering Framework based on Generative Adversarial Networks</b>
+					</dd>
+					<dd>
+						In <a href='https://www.cikm2018.units.it/' title='WWW 2019' style="color:#268BD2;"><b>ACM CIKM 2018</b></a>, Oct. 22-26, 2018. (<b>A/R: 17%</b>)
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C11] <b>Dong-Kyu Chae</b>and Sang-Wook Kim</dt>
+					<dd>
+						<b>Adversarial Training of Deep Autoencoders Towards Recommendation Tasks</b>
+					</dd>
+					<dd>
+						In <a href='http://nidc2018.csp.escience.cn/dct/page/1' title='IEEE IC-NIDC 2018' style="color:#268BD2;"><b>IEEE IC-NIDC 2018</b></a>, Aug. 22-24, 2018.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C10] Jangwan Koo, Dong-Jin Kim, <b>Dong-Kyu Chae</b>, Sang-Wook Kim</dt>
+					<dd>
+						<b>Incremental Maintenance of C-Rank Scores in Dynamic Web Environment</b>
+					</dd>
+					<dd>
+						In <a href='http://smc2017.org/' title='IEEE SMC 2017' style="color:#268BD2;"><b>IEEE SMC 2017</b></a>, Oct. 5-8, 2017.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C9] <b>Dong-Kyu Chae</b>, Bo-Kyum Kim, Seung-Ho Kim and Sang-Wook Kim</dt>
+					<dd>
+						<b>On Classifying Dynamic Graph Bags</b>
+					</dd>
+					<dd>
+						In <a href='https://sites.google.com/site/acmracs2017/home' title=' ACM RACS 2017' style="color:#268BD2;"><b>ACM RACS 2017</b></a>, Sept. 20-23, 2017.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C8] Sang-Chul Lee, Sang-Wook Kim, Sunju Park and <b>Dong-Kyu Chae</b></dt>
+					<dd>
+						<b>A Single-Step Approach to Recommendation Diversification</b>
+					</dd>
+					<dd>
+						In <a href='http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/forms/index.htm' title='WWW 2017' style="color:#268BD2;"><b>WWW 2017</b></a>, Apr. 03-07, 2017 (short paper).
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C7] Sang-Chul Lee, Christos Faloutsos, <b>Dong-Kyu Chae</b> and Sang-Wook Kim</dt>
+					<dd>
+						<b>On Detecting Frauds in Comparison-Shopping Services</b>
+					</dd>
+					<dd>
+						In <a href='http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/forms/index.htm' title='WWW 2017' style="color:#268BD2;"><b>WWW 2017</b></a>, Apr. 03-07, 2017 (short paper).
+					</dd>
+				</dl>
+				<!---->
+				<dl>
+					<dt>ㆍ [C6] Sang-Chul Lee, Si-Yong Lee, <b>Dong-Kyu Chae</b> and Sang-Wook Kim</dt>
+					<dd>
+						<b>Scalable Collaborative Filtering Based on Efficient Identification of Similar Users</b>
+					</dd>
+					<dd>
+						In <a href='https://dblp.org/db/conf/icnidc/index.html' title='IEEE IC-NIDC 2016' style="color:#268BD2;"><b>IEEE IC-NIDC 2016</b></a>, Sept. 23-25, 2016.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C5] Yoon-Yong Ko, <b>Dong-Kyu Chae</b>, and Sang-Wook Kim</dt>
+					<dd>
+						<b>Accurate Path-based Methods for Influence Maximization in Social Networks</b>
+					</dd>
+					<dd>
+						In <a href='http://www2016.ca/' title='WWW 2016' style="color:#268BD2;"><b>WWW 2016</b></a>, Apr. 11-15, 2016 (short paper).
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C4] Hee-Jeong Kim, <b>Dong-Kyu Chae</b>, Jongwuk Lee, and Sang-Wook Kim</dt>
+					<dd>
+						<b>Analyzing Crowdsourced Promotion Effects in Online Social Networks</b>
+					</dd>
+					<dd>
+						In <a href='https://www.sigapp.org/sac/sac2016/' title='ACM SAC 2016' style="color:#268BD2;"><b>ACM SAC 2016</b></a>, Apr. 4-8, 2016.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C3] <b>Dong-Kyu Chae</b>, Sang-Wook Kim, Seong-Je Cho, and Yesol Kim</dt>
+					<dd>
+						<b>DAAV: Dynamic API Authority Vectors for Detecting Software Theft</b>
+					</dd>
+					<dd>
+						In <a href='https://www.cikm-2015.org/' title='ACM CIKM 2015' style="color:#268BD2;"><b>ACM CIKM 2015</b></a>, Oct. 19-23, 2015 (short paper).
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C2] <b>Dong-Kyu Chae</b>, Jiwoon Ha, Sang-Wook Kim, Boo-Joong Kang, and Eul-Gyu Im</dt>
+					<dd>
+						<b>Software Plagiarism Detection: A Graph-based Approach</b>
+					</dd>
+					<dd>
+						In <a href='https://cikm2013.org/' title='ACM CIKM 2013' style="color:#268BD2;"><b>ACM CIKM 2013</b></a>, Oct. 27 – Nov. 1, 2013. (short paper, <b>best poster award</b>)
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [C1] <b>Dong-Kyu Chae</b>, Jiwoon Ha, Sang-Chul Lee, Sang-Wook Kim, and Gyun Woo</dt>
+					<dd>
+						<b>Software Plagiarism Detection via Static API Call Frequency Birthmark</b>
+					</dd>
+					<dd>
+						In <a href='https://www.sigapp.org/sac/sac2013/' title='ACM SAC 2013' style="color:#268BD2;"><b>ACM SAC 2013</b></a>, Mar. 18-22, 2013.
+					</dd>
+				</dl>
+				<p>
+					SCI(E) Journal Papers
+				</p>
+				<dl>
+					<dt>ㆍ [J12] <b>Dong-Kyu Chae</b>, Bo-Kyum Kim, Seung-Ho Kim and Sang-Wook Kim</dt>
+					<dd>
+						<b>Incremental Feature Selection for Efficient Classification of Dynamic Graph Bags</b>
+					</dd>
+					<dd>
+						In <a href='https://onlinelibrary.wiley.com/journal/15320634' title='Concurrency and Computation: Practice and Experience' style="color:#268BD2;"><b>Concurrency and Computation: Practice and Experience</b></a>, Sep. 2020.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J11] <b>Dong-Kyu Chae</b>and Sang-Wook Kim</dt>
+					<dd>
+						<b>Adversarial Training of Deep Autoencoders Towards Recommendation Tasks</b>
+					</dd>
+					<dd>
+						In <a href='http://nidc2018.csp.escience.cn/dct/page/1' title='IEEE IC-NIDC 2018' style="color:#268BD2;"><b>IEEE IC-NIDC 2018</b></a>, Aug. 22-24, 2018.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J10] Jangwan Koo, Dong-Jin Kim, <b>Dong-Kyu Chae</b>, Sang-Wook Kim</dt>
+					<dd>
+						<b>Incremental Maintenance of C-Rank Scores in Dynamic Web Environment</b>
+					</dd>
+					<dd>
+						In <a href='http://smc2017.org/' title='IEEE SMC 2017' style="color:#268BD2;"><b>IEEE SMC 2017</b></a>, Oct. 5-8, 2017.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J9] <b>Dong-Kyu Chae</b>, Bo-Kyum Kim, Seung-Ho Kim and Sang-Wook Kim</dt>
+					<dd>
+						<b>On Classifying Dynamic Graph Bags</b>
+					</dd>
+					<dd>
+						In <a href='https://sites.google.com/site/acmracs2017/home' title=' ACM RACS 2017' style="color:#268BD2;"><b>ACM RACS 2017</b></a>, Sept. 20-23, 2017.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J8] Sang-Chul Lee, Sang-Wook Kim, Sunju Park and <b>Dong-Kyu Chae</b></dt>
+					<dd>
+						<b>A Single-Step Approach to Recommendation Diversification</b>
+					</dd>
+					<dd>
+						In <a href='http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/forms/index.htm' title='WWW 2017' style="color:#268BD2;"><b>WWW 2017</b></a>, Apr. 03-07, 2017 (short paper).
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J7] Sang-Chul Lee, Christos Faloutsos, <b>Dong-Kyu Chae</b> and Sang-Wook Kim</dt>
+					<dd>
+						<b>On Detecting Frauds in Comparison-Shopping Services</b>
+					</dd>
+					<dd>
+						In <a href='http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/forms/index.htm' title='WWW 2017' style="color:#268BD2;"><b>WWW 2017</b></a>, Apr. 03-07, 2017 (short paper).
+					</dd>
+				</dl>
+				<!---->
+				<dl>
+					<dt>ㆍ [J6] Sang-Chul Lee, Si-Yong Lee, <b>Dong-Kyu Chae</b> and Sang-Wook Kim</dt>
+					<dd>
+						<b>Scalable Collaborative Filtering Based on Efficient Identification of Similar Users</b>
+					</dd>
+					<dd>
+						In <a href='https://dblp.org/db/conf/icnidc/index.html' title='IEEE IC-NIDC 2016' style="color:#268BD2;"><b>IEEE IC-NIDC 2016</b></a>, Sept. 23-25, 2016.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J5] Yoon-Yong Ko, <b>Dong-Kyu Chae</b>, and Sang-Wook Kim</dt>
+					<dd>
+						<b>Accurate Path-based Methods for Influence Maximization in Social Networks</b>
+					</dd>
+					<dd>
+						In <a href='http://www2016.ca/' title='WWW 2016' style="color:#268BD2;"><b>WWW 2016</b></a>, Apr. 11-15, 2016 (short paper).
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J4] Hee-Jeong Kim, <b>Dong-Kyu Chae</b>, Jongwuk Lee, and Sang-Wook Kim</dt>
+					<dd>
+						<b>Analyzing Crowdsourced Promotion Effects in Online Social Networks</b>
+					</dd>
+					<dd>
+						In <a href='https://www.sigapp.org/sac/sac2016/' title='ACM SAC 2016' style="color:#268BD2;"><b>ACM SAC 2016</b></a>, Apr. 4-8, 2016.
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J3] <b>Dong-Kyu Chae</b>, Sang-Wook Kim, Seong-Je Cho, and Yesol Kim</dt>
+					<dd>
+						<b>DAAV: Dynamic API Authority Vectors for Detecting Software Theft</b>
+					</dd>
+					<dd>
+						In <a href='https://www.cikm-2015.org/' title='ACM CIKM 2015' style="color:#268BD2;"><b>ACM CIKM 2015</b></a>, Oct. 19-23, 2015 (short paper).
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J2] <b>Dong-Kyu Chae</b>, Jiwoon Ha, Sang-Wook Kim, Boo-Joong Kang, and Eul-Gyu Im</dt>
+					<dd>
+						<b>Software Plagiarism Detection: A Graph-based Approach</b>
+					</dd>
+					<dd>
+						In <a href='https://cikm2013.org/' title='ACM CIKM 2013' style="color:#268BD2;"><b>ACM CIKM 2013</b></a>, Oct. 27 – Nov. 1, 2013. (short paper, <b>best poster award</b>)
+					</dd>
+				</dl>
+				<dl>
+					<dt>ㆍ [J1] <b>Dong-Kyu Chae</b>, Jiwoon Ha, Sang-Chul Lee, Sang-Wook Kim, and Gyun Woo</dt>
+					<dd>
+						<b>Software Plagiarism Detection via Static API Call Frequency Birthmark</b>
+					</dd>
+					<dd>
+						In <a href='https://www.sigapp.org/sac/sac2013/' title='ACM SAC 2013' style="color:#268BD2;"><b>ACM SAC 2013</b></a>, Mar. 18-22, 2013.
+					</dd>
+				</dl>
+				<p>
+					Honors & Awards
+				</p>
+			</div>
 			<a href='#headerWrap' title='top' class='topBox'>
 				↑
 			</a>

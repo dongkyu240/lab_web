@@ -24,7 +24,7 @@
 
 	/*########## header ##########*/
 		#wrap{width:100%; margin:0 auto;}
-		#headerWrap{width:100%; background-color:rgba(0,0,0,0.9); position:fixed; top:0; z-index:1;}
+		#headerWrap{width:100%; background-color:#2980B9; position:fixed; top:0; z-index:1;}
 		#header{width:90%; height:78px; margin:0 auto; position:relative;}
 		h1{width:500px; height:43px; position:absolute; top:13px; /*overflow:hidden;*/ transition:all 2s;}
 		h1 a{color:#FFFFFF;color:#FFFFFF;}
@@ -63,7 +63,7 @@
 		#field1 ul li{height:50px; font-family:Bitter;}
 		#field2 ul li{height:50px; font-family:Bitter;}
 		#field3 ul li{height:50px; font-family:Bitter;}
-		#field4 ul li{height:50px; font-family:Bitter;}
+		#field4 ul li{width:900px; height:50px; font-family:Bitter;}
 
 		.titles{padding-bottom:15px; font-size:35px; font-weight:600; font-family:Oswald,'arial',sans-serif;}
 
@@ -77,6 +77,13 @@
 	.topBox{display:block; width:50px; border-radius:8px; line-height:58px; font-weight:600; text-align:center; background-color:#363636; color:#fff; font-size:35px; opacity:.7; position:fixed; right:20px; bottom:20px; transition:all 1s;}
 	.topBox:hover{border:2px solid red; border-radius:8px;}
 
+
+	@media all and (min-width:300px) and (max-width:1300px){
+
+		/*########## header ##########*/
+			#infoMenu{display:none;}
+	}
+
 	</style>
 	<script>
 
@@ -88,7 +95,7 @@
 		<div id='headerWrap'>
 			<header id='header'>
 				<h1>
-					<a href='lab.html' title='dataintelligencelab'>
+					<a href='index.html' title='DataIntelligenceLab'>
 						<span>
 							Data Intelligence Lab(채동규)
 						</span>
@@ -98,7 +105,7 @@
 				<div id='topMenu'>
 					<ul id='infoMenu'>
 						<li>
-							<a href='lab.html' title='Home'>
+							<a href='index.html' title='Home'>
 								Home
 							</a>
 						</li>
@@ -108,7 +115,7 @@
 							</a>
 						</li>
 						<li>
-							<a href='projects' title='Projects'>
+							<a href='projects.html' title='Projects'>
 								Projects
 							</a>
 						</li>
@@ -118,7 +125,7 @@
 							</a>
 						</li>
 						<li>
-							<a href='lectures' title='Lectures'>
+							<a href='lectures.html' title='Lectures'>
 								Lectures
 							</a>
 						</li>
