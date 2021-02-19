@@ -4,15 +4,16 @@
   <title> Data Intelligence Lab </title>
  <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'/>
- <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+ <!--<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">-->
+ <!--<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">-->
  <meta charset='utf-8'/>	
   <link rel='shortcut icon' href='img/logo.png'/>
+  <link rel='apple-touch-icon' href='imgs/favicon.png'/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src='js/jquery-ui.min.js'></script>
   <script src='js/tabBasic_mobHeaderSlide.js'></script>
   <script src='js/section_ad_opaque.js'></script>
-	<style>	
+	<style>
 	/*########## �ʱ�ȭ ##########*/
 		*{margin:0; padding:0;}
 		li{list-style:none;}
@@ -51,39 +52,27 @@
 		#visual ul{width:100%; height:100%;}
 		#visual ul li{width:100%; height:100%; line-height:400px; color:#fff; text-align:center; font-size:90px; font-weight:900; letter-spacing:35px;}
 
-	/*########### field ###########*/
-		#field1{width:60%; height:220px; margin:0 auto; padding-top:160px;}
-		#field2{width:60%; height:220px; margin:0 auto;}
-		#field3{width:60%; height:220px; margin:0 auto;}
-		#field4{width:60%; height:220px; margin:0 auto;}
-		#field1 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field2 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field3 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field4 ul{width:100%; height:180px; font-size:24px; font-weight:300; font-family:'arial',sans-serif;}
-		#field1 ul li{height:50px; font-family:Bitter;}
-		#field2 ul li{height:50px; font-family:Bitter;}
-		#field3 ul li{height:50px; font-family:Bitter;}
-		#field4 ul li{width:900px; height:50px; font-family:Bitter;}
+	/*########### container div #########*/
+		#container #category{width:1100px; margin:0 auto;}
 
-		.titles{padding-bottom:15px; font-size:35px; font-weight:600; font-family:Oswald,'arial',sans-serif;}
+		#category dl{padding-bottom:20px;}
+		#category a b:hover{text-decoration:underline;}
 
-		#mailing{width:60%; height:200px; margin:0 auto; text-align:left;}
+	/*############# container p ############*/
+		#container p{padding:50px 0; font-size:34px; font-weight:900;}
 
 	/*########### footer ###########*/
-		footer{width:100%; text-align:center;}
+		footer{width:100%; padding-top:500px; text-align:center;}
 		footer p{width:90%; margin:0 auto; padding:30px 0 40px; border-top:1px solid #cdcdcd; font-size:12px;}
-
 	
 	.topBox{display:block; width:50px; border-radius:8px; line-height:58px; font-weight:600; text-align:center; background-color:#363636; color:#fff; font-size:35px; opacity:.7; position:fixed; right:20px; bottom:20px; transition:all 1s;}
 	.topBox:hover{border:2px solid red; border-radius:8px;}
-
 
 	@media all and (min-width:300px) and (max-width:1300px){
 
 		/*########## header ##########*/
 			#infoMenu{display:none;}
 	}
-
 	</style>
 	<script>
 
@@ -99,7 +88,6 @@
 						<span>
 							Data Intelligence Lab(채동규)
 						</span>
-						<!--<img src='imgs/apple_logo.svg' alt='apple logo'/>-->
 					</a>
 				</h1>
 				<div id='topMenu'>
@@ -137,50 +125,20 @@
 			<div id='visual'>
 				<ul>
 					<li>
-						<span>MEMBERS</span>
+						<span>LECTURES</span>
 					</li>
 				</ul>
 			</div>
-						<div id='field1'>
-				<p class='titles'>
-					지도교수
+			<div id='category'>
+				<p>
+					Lectures
 				</p>
-				<ul>
-					<li>
-						- 채동규
-					</li>
-					
-				</ul>
-			</div>
-			<div id='field2'>
-				<p class='titles'>
-					박사과정
-				</p>
-				<ul>
-					<li>
-						- 황성현 (XAI)
-					</li>
-				</ul>
-			</div>
-			<div id='field3'>
-				<p class='titles'>
-					석박통합과정
-				</p>
-				<ul>
-					<li>
-						- 김수경 (XAI) 이하림 (XAI) 성은선 (XAI)
-					</li>
-				</ul>
-			</div>
-			<div id='field4'>
-				<p class='titles'>
-					석사과정
-				</p>
-				<ul>
-					<li>
-						- 김형준 (XAI+추천시스템), 임석영 (XAI+음성데이터), 박수민 (XAI+추천시스템), 김성겸 (XAI), 이유진 (XAI), 민희수 (추천시스템), 구인화 (few-shot learning), 김진수 (추천시스템), 김지현 (추천시스템), 김선민 (unsupervised learning)
-					</li>
-				</ul>
+				<dl>
+					<dt>2021-1: 딥러닝기초 (대학원), 이산수학 (학부)</dt>
+				</dl>
+				<dl>
+					<dt>2020-2: 딥러닝 (대학원), 알고리즘및문제해결기법 (학부)</dt>
+				</dl>
 			</div>
 			<a href='#visual' title='top' class='topBox'>
 				↑
