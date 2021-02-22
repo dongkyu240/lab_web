@@ -36,7 +36,7 @@
 				$(this).css({'borderColor':'#ededed','boxShadow':'1px -1px 1px #454545'});
 				$('#mobMenu').slideDown(1500,'easeOutBounce');
 				$('#visual').css({'display':'none'});
-				$('#container').css({'padding-top':'200px'});
+				$('#container').css({'padding-top':'400px'});
 				$('#mobMenu').css({'z-index':'999'});
 			});
 			$('#mobMenu div span:last').click(function(){
