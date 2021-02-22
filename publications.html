@@ -23,6 +23,7 @@
 		body,div,header,footer,section,ul,ol,dl,dt,dd,li,p{margin:0; padding:0;}
 		div, header, nav, section, footer{display:block;}
 
+		#fakeTop{width:0px; height:0px; display:inline; position:absolute; left:-1000px; top:-1000px;}
 	/*########## header ##########*/
 		#wrap{width:100%; margin:0 auto;}
 		#headerWrap{width:100%; background-color:#2980B9; position:fixed; top:0; z-index:1;}
@@ -69,19 +70,82 @@
 	.topBox{display:block; width:50px; border-radius:8px; line-height:58px; font-weight:600; text-align:center; background-color:#363636; color:#fff; font-size:35px; opacity:.7; position:fixed; right:20px; bottom:20px; transition:all 1s;}
 	.topBox:hover{border:2px solid red; border-radius:8px;}
 
-	@media all and (min-width:300px) and (max-width:1300px){
+	@media all and (min-width:480px) and (max-width:1300px){
 
 		/*########## header ##########*/
 			#infoMenu{display:none;}
 	}
+
+	@media all and (min-width:320px) and (max-width:479px){
+
+		/*########## header ##########*/
+			#wrap{max-width:479px; width:100%; margin:0 auto;}
+			#headerWrap{height:0px; position:relative;}
+			#header{display:none;}
+			
+			/*####### mobHeader #######*/
+			
+			#mobHeader{display:block; width:100%; height:47px; padding-top:10px; text-align:center; overflow:hidden; background-color:#2980B9;}
+			#mobHeader a{color:#FFFFFF; font-size:24px; font-weight:700;}
+
+			#mobHeader .img_header{width:30px; height:20px; position:absolute; right:10px; top:14px; border:2px solid #343434; background-image:-webkit-linear-gradient(top, #2980B9, #298AB9); border-radius:7px;}
+			#mobHeader .img_header p{width:32px; height:30px; margin:0 auto;}
+			#mobHeader .img_header span{display:block; padding-left:6px; width:22px; height:1px; margin:3px 5px 0 0; /*float:left;*/ overflow:hidden; border:1px solid #000; background-color:#000;}
+
+			/*####### mobMenu #######*/
+			#mobMenu{display:none; width:100%; position:absolute; left:0; top:0;}
+			
+			#mobMenu #mobMenu_div1{width:100%; margin:0 auto; height:50px; background-color:#2980B9; border-bottom:1px solid #dedede; position:relative;}
+			#mobMenu #mobMenu_div1 span:first-child{width:100%; /*text-align:right;*/ position:absolute; top:8px; left:5px;}
+			#mobMenu #mobMenu_div1 span:last-child{width:21px; text-align:left; position:absolute; top:15px; right:5px;}
+			#mobMenu #mobMenu_div1 .margin_both a{width:100%; color:#FFF; font-size:23px; font-weight:700;}
+			
+			#mobMenu #mobMenu_div1 span img{width:90%;}
+			#mobMenu #mobMenu_div1 form{display:none; width:82%; line-height:40px; float:left;}
+			#mobMenu #mobMenu_div1 form input{width:100%; text-indent:10px; height:22px; border-radius:10px; outline:none;}
+
+			#mobMenu ul{width:100%; background-color:#2980B9; transition:all .5s; text-align:center;}
+			#mobMenu ul li{width:100%; border-bottom:1px solid #cdcdcd; line-height:40px;}
+			#mobMenu ul li a{color:#E5E5E5;}
+			#mobMenu ul li div{color:#fff;}
+			#mobMenu ul li div p{border-bottom:1px dashed #ccc;}
+
+			#mobMenu ul, #mobMenu ul li, #mobMenu ul li div:after{content:''; display:block; clear:both;}
+
+		/*########## container ##########*/
+			/*#container{width:320px;}*/
+			/*########## visual ##########*/
+			#visual{width:100%; height:200px; overflow:hidden; background-image:url('img/ai.jpeg'); background-size:100%; background-repeat:no-repeat; opacity:0.8;}
+			#visual ul{width:100%; height:100%;}
+			#visual ul li{width:100%; height:100%; line-height:180px; padding-left:10px; color:#fff; text-align:center; font-size:40px; font-weight:700; letter-spacing:20px;}
+			#container #category{width:100%; padding:40px 0;}
+			#container dl{width:90%; margin:0 auto; font-size:16px;}
+
+		/*########## footer ##########*/
+			footer{padding-top:0px;}
+		
+	}
+
+	@media all and (min-width:0px) and (max-width:320px){
+			#wrap{display:none;}
+	}
 	</style>
 	<script>
+		/* mobHeader accordion 기능*/
 
+		$(document).ready(function(){
+			$('#mobMenu ul li a').click(function(){
+				$('#mobMenu ul li div').css({'backgroundColor':'#555'}).slideUp(500);
+				$(this).next().children('p:last-child').css({'borderBottom':'none'});
+			});
+		});
 	</script>
  </head>
 
  <body>
 	<div id='wrap'>
+		<p id='fakeTop'>			
+		</p>
 		<div id='headerWrap'>
 			<header id='header'>
 				<h1>
@@ -122,6 +186,47 @@
 					</ul>
 				</div>
 			</header>
+		</div>
+		<div id='mobHeader'>
+			<a href='index.html' title='DataIntelligenceLab'>
+				Data Intelligence Lab
+			</a>
+			<div class='img_header'>
+				<p>
+					<span></span>
+					<span></span>
+					<span></span>
+				</p>
+			</div>
+		</div>
+		<div id='mobMenu'>
+			<div id='mobMenu_div1'>
+				<span class='margin_both'>
+					<a href='index.html' title='DataIntelligenceLab'>
+						Data Intelligence Lab
+					</a>
+				</span>
+				<span>
+					<img src='img/cancel_image.png' alt='cancel image'/>
+				</span>
+			</div>
+			<ul>
+				<li>
+					<a href='index.html' title='DataIntelligenceLab'>Home</a>
+				</li>
+				<li>
+					<a href='members.html' title='Members'>Members</a>
+				</li>
+				<li>
+					<a href='projects.html' title='Projects'>Projects</a>
+				</li>
+				<li>
+					<a href='publications.html' title='Publications'>Publications</a>
+				</li>
+				<li>
+					<a href='lectures.html' title='Lectures'>Lectures</a>
+				</li>
+			</ul>
 		</div>
 		<div id='container'>
 			<div id='visual'>
@@ -385,7 +490,7 @@
 					</dd>
 				</dl>
 			</div>
-			<a href='#visual' title='top' class='topBox'>
+			<a href='#fakeTop' title='top' class='topBox'>
 				↑
 			</a>
 		</div>
