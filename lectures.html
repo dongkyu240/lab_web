@@ -23,6 +23,7 @@
 		body,div,header,footer,section,ul,ol,dl,dt,dd,li,p{margin:0; padding:0;}
 		div, header, nav, section, footer{display:block;}
 
+	#fakeTop{width:0px; height:0px; display:inline;}
 	/*########## header ##########*/
 		#wrap{width:100%; margin:0 auto;}
 		#headerWrap{width:100%; background-color:#2980B9; position:fixed; top:0; z-index:1;}
@@ -146,6 +147,8 @@
 
  <body>
 	<div id='wrap'>
+		<p id='fakeTop'>			
+		</p>
 		<div id='headerWrap'>
 			<header id='header'>
 				<h1>
@@ -243,7 +246,7 @@
 					<dt>ㆍ 2020-2: 딥러닝 (대학원), 알고리즘및문제해결기법 (학부)</dt>
 				</dl>
 			</div>
-			<a href='#visual' title='top' class='topBox'>
+			<a href='#fakeTop' title='top' class='topBox'>
 				↑
 			</a>
 		</div>
