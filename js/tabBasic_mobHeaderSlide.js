@@ -51,5 +51,4 @@
 			$('#mobMenu div span:first').click(function(){
 				$('#mobMenu form').show().css({'margin':'0 3%'});
 			});
-
 		});
