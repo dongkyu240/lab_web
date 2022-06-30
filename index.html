@@ -12,6 +12,21 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+
+	<!-- slider script -->
+	<link
+	  rel="stylesheet"
+	  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+	/>
+
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!--	<script type="module">-->
+<!--	  import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'-->
+
+<!--	  const swiper = new Swiper(...)-->
+<!--	</script>-->
+
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -26,6 +41,7 @@
 							<!-- <h1 id="logo2"><a href="index.html">Data Intelligence Lab</a></h1> -->
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
+								<li><a href="Research.html">Research</a></li>
 								<li><a href="Members.html">Members</a></li>
 								<li><a href="Projects.html">Projects</a></li>
 								<li><a href="Publications.html">Publications</a></li>
@@ -36,96 +52,208 @@
 				</div>
 
 			<!-- Banner -->
-				<section id="banner" class="home-banner">
-					<header>
-						<h2><em>Welcome to Data Intelligence Lab @ HYU</em></h2>
-					</header>
-				</section>
+<!--				<section id="banner" class="home-banner">-->
+<!--					<header>-->
+<!--						<h2><em>Welcome to Data Intelligence Lab @ HYU</em></h2>-->
+<!--					</header>-->
+<!--				</section>-->
 
 
 			<!-- Gigantic Heading -->
-				<section class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h2>한양대학교 데이터인텔리전스 연구실은 현재 아래의 분야들을 연구하고 있습니다.</h2>
-						</header>
-					</div>
-				</section>
+<!--				<section class="wrapper style1">-->
+<!--					<div class="container">-->
+<!--						<header class="major">-->
+<!--&lt;!&ndash;							<h2>한양대학교 데이터인텔리전스 연구실은 현재 아래의 분야들을 연구하고 있습니다.</h2>&ndash;&gt;-->
+<!--						</header>-->
+<!--					</div>-->
+<!--				</section>-->
 
 			<!-- contents -->
 
 				<section class="wrapper style1">
 					<div class="container">
-							<div class="row">
-								<section class="col-6 col-12-narrower">
-									<div class="box post">
-										<header>
-											<h2>설명 가능한 인공지능 (XAI)</h2>
-										</header>
-											<ul>
-												<li>Concept-based explanation</li>
-												<li>Case-based explanation</li>
-												<li>Bayesian neural network</li>
-												<li>XAI for healthcare</li>
-											</ul>
-									</div>
-								</section>
 
-								<section class="col-6 col-12-narrower">
-									<div class="box post">
-										<header>
-											<h2>추천시스템</h2>
-										</header>
-											<ul>
-												<li>Explainable recommendation</li>
-												<li>Graph-based recommendation</li>
-												<li>Sentiment-based recommendation</li>
-												<li>Media (cartoon, music, book) recommendation</li>
-												<li>Fake review detection</li>
-											</ul>
-									</div>
-								</section>
+						<!-- Slider main container -->
+						<div class="swiper">
+						  <!-- Additional required wrapper -->
+						  <div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img src="images/lab_photo_1.jpg"/>
 							</div>
+							<div class="swiper-slide">
+								<img src="images/lab_photo_2.jpg"/>
+							</div>
+							...
+						  </div>
+						  <!-- If we need pagination -->
+						  <div class="swiper-pagination"></div>
 
-							<div class="row">
-								<section class="col-6 col-12-narrower">
-									<div class="box post">
-										<header>
-											<h2>인공지능 응용</h2>
-										</header>
-											<ul>
-												<li>AI+finance (stock prediction, etc...)</li>
-												<li>Time-series analysis</li>
-												<li>Anomaly detection</li>
-												<li>Smart factory</li>
-											</ul>
+						  <!-- If we need navigation buttons -->
+						  <div class="swiper-button-prev"></div>
+						  <div class="swiper-button-next"></div>
+
+						</div>
+
+						<h2 class="news-title">Recent News</h2>
+
+
+						<div class="news-list">
+							<div class="list-post">
+								<a href="#">
+									<div class="list-post-date">
+										<time>02 July 2022</time>
+										<div><div class="list-post-title"> DILAB이 제주도에서 열린 KCC 2022에 참여합니다. DILAB은 매 여름, 겨울마다 제주도, 평창 등에서 열리는 국내학회에 참석하고 있습니다.</div></div>
 									</div>
-								</section>
-								<section class="col-6 col-12-narrower">
-									<div class="box post">
-										<header>
-											<h2>컴퓨터비전</h2>
-										</header>
-											<ul>
-												<li>Few-shot learning</li>
-												<li>Meta learning</li>
-												<li>3D CNN</li>
-											</ul>
+								</a>
+
+									<div class="list-post-date">
+										<time>20 May 2022</time>
+										<div>
+											<div class="list-post-title"> 석박통합과정 김성겸 학생의 논문이 KDD 2022에 accept되었습니다 (acceptance rate: 15%).
+											<span class="top-tier">TOP-TIER</span></div>
+										</div>
 									</div>
-								</section>
+
+									<div class="list-post-date">
+										<time>21 Apr 2022</time>
+										<div>
+											<div class="list-post-title"> 석박통합과정 이하림, 성은선 학생들의 논문이 IJCAI 2022에 accept되었으며 (acceptance rate: 15%) oral presentation으로 선정되었습니다 (3.75%).
+											<span class="top-tier">TOP-TIER</span></div>
+										</div>
+									</div>
+
+									<div class="list-post-date">
+										<time>30 Mar 2022</time>
+										<div>
+											<div class="list-post-title"> 석사과정 이종수 학생이 학부연구생 기간 동안 진행했던 연구결과들이 국제 학술대회 (ACM SAC 2022) 와 SCI학술지 (Electronics) 에 accept되었습니다.
+											<span class="sci">SCI</span></div>
+										</div>
+									</div>
+
+									<div class="list-post-date">
+										<time>01 Mar 2022</time>
+										<div><div class="list-post-title"> 채동규 교수님이 ICML 2022 리뷰어로 참여하셨습니다.</div></div>
+									</div>
+
+									<div class="list-post-date">
+										<time>01 Mar 2022</time>
+										<div><div class="list-post-title"> 9명의 신입생들이 DILAB에 합류했으며, 2명의 기존 석사과정 학생들이 석박통합과정으로 전환했습니다.</div></div>
+									</div>
+
+									<div class="list-post-date">
+										<time>01 Jan 2022</time>
+										<div><div class="list-post-title"> 2편의 논문이 IEEE Bigcomp 2022에 accept되었습니다.</div></div>
+									</div>
+
+									<div class="list-post-date">
+										<time>01 Jan 2022</time>
+										<div>
+											<div class="list-post-title"> 김상욱 교수님의 BigDas Lab과의 공동연구 결과가 WSDM 2022에 accept되었습니다 (acceptance rate: 20%).
+											<span class="top-tier">TOP-TIER</span></div>
+
+										</div>
+									</div>
+
+								<a href="news_page/news_20211221.html">
+									<div class="list-post-date">
+										<time>21 Dec 2021</time>
+										<div><div class="list-post-title"> DILAB에서 총 12편의 논문을 국내 학술대회에 발표했습니다.</div></div>
+									</div>
+								</a>
+
+									<div class="list-post-date">
+										<time>01 Sep 2021</time>
+										<div><div class="list-post-title"> 2명의 신입생들이 DILAB에 합류했습니다.</div></div>
+									</div>
+
+									<div class="list-post-date">
+										<time>01 July 2021</time>
+										<div>
+											<div class="list-post-title"> 김상욱 교수님의 BigDas Lab과의 공동연구 결과들이 국제 학술대회 (ACM CCS 2021) 와 SCI학술지 (Applied Sciences) 에 accept되었습니다.
+											<span class="sci">SCI</span></div>
+										</div>
+									</div>
+
+								<a href="news_page/news_20210627.html">
+									<div class="list-post-date">
+										<time>27 June 2021</time>
+										<div><div class="list-post-title"> DILAB이 제주도에서 열린 KCC 2021에 참석했습니다.</div></div>
+									</div>
+								</a>
+
+									<div class="list-post-date">
+										<time>01 Mar 2021</time>
+										<div><div class="list-post-title"> 13명의 신입생들이 DILAB에 합류했습니다.</div></div>
+									</div>
+
+
 							</div>
+						</div>
+
+<!--							<div class="row">-->
+<!--								<section class="col-6 col-12-narrower">-->
+<!--									<div class="box post">-->
+<!--										<header>-->
+<!--											<h2>설명 가능한 인공지능 (XAI)</h2>-->
+<!--										</header>-->
+<!--											<ul>-->
+<!--												<li>Concept-based explanation</li>-->
+<!--												<li>Case-based explanation</li>-->
+<!--												<li>Bayesian neural network</li>-->
+<!--												<li>XAI for healthcare</li>-->
+<!--											</ul>-->
+<!--									</div>-->
+<!--								</section>-->
+
+<!--								<section class="col-6 col-12-narrower">-->
+<!--									<div class="box post">-->
+<!--										<header>-->
+<!--											<h2>추천시스템</h2>-->
+<!--										</header>-->
+<!--											<ul>-->
+<!--												<li>Explainable recommendation</li>-->
+<!--												<li>Graph-based recommendation</li>-->
+<!--												<li>Sentiment-based recommendation</li>-->
+<!--												<li>Media (cartoon, music, book) recommendation</li>-->
+<!--												<li>Fake review detection</li>-->
+<!--											</ul>-->
+<!--									</div>-->
+<!--								</section>-->
+<!--							</div>-->
+
+<!--							<div class="row">-->
+<!--								<section class="col-6 col-12-narrower">-->
+<!--									<div class="box post">-->
+<!--										<header>-->
+<!--											<h2>인공지능 응용</h2>-->
+<!--										</header>-->
+<!--											<ul>-->
+<!--												<li>AI+finance (stock prediction, etc...)</li>-->
+<!--												<li>Time-series analysis</li>-->
+<!--												<li>Anomaly detection</li>-->
+<!--												<li>Smart factory</li>-->
+<!--											</ul>-->
+<!--									</div>-->
+<!--								</section>-->
+<!--								<section class="col-6 col-12-narrower">-->
+<!--									<div class="box post">-->
+<!--										<header>-->
+<!--											<h2>컴퓨터비전</h2>-->
+<!--										</header>-->
+<!--											<ul>-->
+<!--												<li>Few-shot learning</li>-->
+<!--												<li>Meta learning</li>-->
+<!--												<li>3D CNN</li>-->
+<!--											</ul>-->
+<!--									</div>-->
+<!--								</section>-->
+<!--							</div>-->
 						</div>
 				</section>
 
 				 <section class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h3>
-								뿐만 아니라 AI & 데이터마이닝과 관련된 모든 연구분야를 다루고 있습니다. 관심 있는 지원자 분들은 <b style="color:#2980B9">dongkyu@hanyang.ac.kr</b>로 간단한 자기소개서 및 연구계획서, 이력서, 영어성적증명서, 포트폴리오 등을 첨부해서 메일 바랍니다.</br>
-								*인공지능대학원/컴퓨터소프트웨어학과 상관없이, 석박통합과정은 6학기동안 (박사과정은 4학기) 등록금 전액을 지원받습니다. 과제 인건비와는 별도로 주어지는 장학금입니다.
-							</h3>
-						</header>
-					</div>
+
 				</section>
 
 
