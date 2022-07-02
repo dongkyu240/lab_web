@@ -3615,7 +3615,7 @@ input, select, textarea {
 }
 
 .list-post-date:hover .Photo {
-	color: navy;
+	color: white;
 	background-color: navy;
 	transition-duration: 0.4s;
 }
