@@ -3548,8 +3548,8 @@ input, select, textarea {
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-left: 3px;
-	color: yellow;
-	border: yellow 1px solid;
+	color: lime;
+	border: lime 1px solid;
 	text-align: center;
 	font-weight: bold;
 	font-size: 16px;
@@ -3597,9 +3597,9 @@ input, select, textarea {
 	transition-duration: 0.4s;
 }
 
-.list-post-date:hover .NLP {
+.list-post-date:hover .Welcome {
 	color: white;
-	background-color: yellow;
+	background-color: lime;
 	transition-duration: 0.4s;
 }
 
