@@ -3489,6 +3489,61 @@ input, select, textarea {
 	font-size: 16px;
 }
 
+.XAI {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	color: fuchsia;
+	border: fuchsia 1px solid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.RecSys {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	color: orange;
+	border: orange 1px solid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.HealthCare {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	color: teal;
+	border: teal 1px solid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.Vision {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	color: olive;
+	border: olive 1px solid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.NLP {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	color: aqua;
+	border: aqua 1px solid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
 .list-post-date:hover .top-tier {
 	color: white;
 	background-color: crimson;
@@ -3501,6 +3556,35 @@ input, select, textarea {
 	transition-duration: 0.4s;
 }
 
+.list-post-date:hover .XAI {
+	color: white;
+	background-color: fuchsia;
+	transition-duration: 0.4s;
+}
+
+.list-post-date:hover .RecSys {
+	color: white;
+	background-color: orange;
+	transition-duration: 0.4s;
+}
+
+.list-post-date:hover .HealthCare {
+	color: white;
+	background-color: teal;
+	transition-duration: 0.4s;
+}
+
+.list-post-date:hover .Vision {
+	color: white;
+	background-color: olive;
+	transition-duration: 0.4s;
+}
+
+.list-post-date:hover .NLP {
+	color: white;
+	background-color: aqua;
+	transition-duration: 0.4s;
+}
 
 
 /* slide */
