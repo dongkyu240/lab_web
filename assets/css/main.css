@@ -3696,3 +3696,10 @@ input, select, textarea {
     max-width: 100%;
   }
 }
+
+/* mobile main slider */
+@media (max-width:600px) {
+ .swiper {
+	 height: 250px;
+ }
+}
