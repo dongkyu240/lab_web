@@ -3577,6 +3577,26 @@ input, select, textarea {
 	font-size: 16px;
 }
 
+
+.award {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 3px;
+	color: #4000FF;
+	border: #4000FF 1px solid;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.list-post-date:hover .award {
+	color: white;
+	background-color: #4000FF;
+	transition-duration: 0.4s;
+}
+
+
 .list-post-date:hover .time-series {
 	color: white;
 	background-color: #8C0000;
