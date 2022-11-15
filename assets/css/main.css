@@ -3702,6 +3702,10 @@ input, select, textarea {
   width: 100%;
 }
 
+.news-one-image img {
+	width: 100%;
+}
+
 @media (max-width: 1200px) {
   .column {
     flex: 40%;
