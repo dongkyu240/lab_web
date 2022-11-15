@@ -3703,7 +3703,7 @@ input, select, textarea {
 }
 
 .news-one-image img {
-	width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
