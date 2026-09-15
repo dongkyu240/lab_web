@@ -64,6 +64,11 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+			// Photo posts do not load or display the home-page slider.
+			if (typeof Swiper === 'undefined' || !document.querySelector('.swiper')) {
+				return;
+			}
+
 			const swiper = new Swiper('.swiper', {
 			  // Optional parameters
 			  direction: 'horizontal',

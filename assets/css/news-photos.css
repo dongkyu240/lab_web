@@ -1,0 +1,20 @@
+/* Photo posts use the existing news layout and preserve each image's proportions. */
+.photo-gallery img {
+	display: block;
+	height: auto;
+}
+
+.news-one-image.photo-gallery img + img {
+	margin-top: 1em;
+}
+
+.news-back-link {
+	margin-top: 2em;
+}
+
+@media (max-width: 600px) {
+	.photo-gallery > .column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
